@@ -1,10 +1,8 @@
 const Discord = require("discord.js");
+var client = new Discord.Client();
 
-var bot = new Discord.Client();
-
-bot.on("ready", function() {
-    bot.user.setGame("En développement");
-    console.log("Le bot a bien été connecté");
+client.on("ready", function() {
+    client.user.setGame("En développement");
 })
 
 bot.login(process.env.TOKEN);
